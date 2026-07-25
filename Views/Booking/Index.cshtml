@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Booking";
+}
+
+<h2>Room Booking</h2>
+
+<form method="post">
+
+    <label>Name</label><br />
+    <input type="text" name="CustomerName" />
+    <br /><br />
+
+    <label>Email</label><br />
+    <input type="email" name="Email" />
+    <br /><br />
+
+    <label>Check In</label><br />
+    <input type="date" name="CheckInDate" />
+    <br /><br />
+
+    <label>Check Out</label><br />
+    <input type="date" name="CheckOutDate" />
+    <br /><br />
+
+    <input type="submit" value="Book Now" class="btn btn-primary" />
+
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <h3>@ViewBag.Message</h3>
+}
